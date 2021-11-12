@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Small devices (outside media queries) */
+body {
+  margin: 45px;
+}
+
+/* Articles */
+.articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+/* Article */
+
+.article {
+  background-color: #c4c4c4;
+
+  padding: 31px 25px;
+}
+
+.article-image {
+  width: 350px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.article p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-1 {
+    background-color: #f29090;
+  }
+
+  .article-title {
+    font-size: 22px;
+  }
+
+  .article p {
+    font-size: 17px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .article-1 {
+    background-color: #c4c4c4;
+  }
+
+  .article-2 {
+    background-color: #88c7eb;
+  }
+}
